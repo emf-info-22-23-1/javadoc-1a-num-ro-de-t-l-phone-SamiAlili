@@ -13,11 +13,16 @@ public class Application {
      */
     public static void main(String[] args) {
         Worker wrk = new Worker();
-     
-        if (wrk.controleNumeroTelMobile("VALEUR 1", "VALEUR 2")) {
+        
+        String prefix="+4179";
+        String num="744 22 31";
+        
+        if (wrk.controleNumeroTelMobile(prefix, num)) {
             System.out.println("TEL MOBILE OK");
+            System.out.println(prefix +" "+ num);
         } else {
             System.out.println("TEL MOBILE NOK");
+            System.out.println(prefix +" "+ num);
         }
     }
 
